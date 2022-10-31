@@ -151,7 +151,7 @@ confimBtn.addEventListener("click", (event) => {
     event.preventDefault()
     errorDiv[0].style.display = "block"
   }
-  else if (cardNumber.value == "") {
+  else if (cardNumber.value.length < 16) {
 
     event.preventDefault()
     errorDiv[1].style.display = "block"
@@ -169,11 +169,7 @@ confimBtn.addEventListener("click", (event) => {
     event.preventDefault()
     
   }
-
- 
-
-  }
+}
 
 )
 
-// display: grid; justify-items:center; text-align:center;

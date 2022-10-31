@@ -23,6 +23,7 @@
   margin-left: 60px;
   box-shadow: 0 0.5rem 5rem -0.5rem rgb(0 0 0 / 25%);
 }
+
 .front-of-card {
   box-shadow: 0 0.5rem 5rem -0.5rem rgb(0 0 0 / 25%);
 
@@ -53,7 +54,7 @@
 .card-content div {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 form {
@@ -65,9 +66,9 @@ form {
 
 }
 
-.add-card-section picture img{
+.add-card-section picture img {
   height: calc(100vh - 20px);
-  
+
 }
 
 .form-card {
@@ -81,27 +82,28 @@ form input {
 
 }
 
-.newpage{
+.newpage {
   display: none;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  
-  
+  margin-top: 100px;
+
+
 }
-.newpage input{
+
+.newpage input {
   width: 100%;
   border: none;
   border-radius: 10px;
 }
+
 #expdate-m,
 #expdate-y {
   max-width: 60px;
 }
-#form-cc{
-  
-}
+
 .exp-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,7 +117,7 @@ form input {
 
 }
 
-.exp-area div:nth-child(2){
+.exp-area div:nth-child(2) {
   display: grid;
 }
 
@@ -132,20 +134,23 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: hsl(278, 18%, 44%);;
+  background-color: hsl(278, 18%, 44%);
+  ;
   max-width: 100%;
   padding: 16px;
   cursor: pointer;
- 
+
 }
-.error-msg{
+
+.error-msg {
   color: var(--color-p3);
   display: none;
 }
 
-.container-card{
+.container-card {
   display: grid;
 }
+
 @media (max-width:1400px) {
   .card-imgs {
     width: 350px;
@@ -153,7 +158,7 @@ input[type="submit"]:hover {
   }
 
   .card-infos {
-  
+
     gap: 20px;
   }
 
@@ -163,11 +168,13 @@ input[type="submit"]:hover {
     top: 312px;
     left: 330px;
   }
+
   .card-imgs {
     top: 420px;
 
   }
-  .card-content{
+
+  .card-content {
     width: 300px;
   }
 }
@@ -187,12 +194,12 @@ input[type="submit"]:hover {
   #cvc-code {
     max-width: 60px;
   }
- 
+
 }
 
 @media (max-width:1000px) {
   .card-imgs {
-  left: 20px;
+    left: 20px;
 
   }
 }
@@ -221,7 +228,7 @@ input[type="submit"]:hover {
 
 
   .front-of-card {
-    
+
     transform: translateY(-80px);
     order: 2;
   }
@@ -234,7 +241,7 @@ input[type="submit"]:hover {
   }
 
   .card-infos-2 {
-    
+
     z-index: 22;
     top: 83px;
     left: 270px;
@@ -250,9 +257,10 @@ input[type="submit"]:hover {
 
 @media(max-width:500px) {
   .card-imgs {
-    left:70px;
+    left: 70px;
   }
-  form{
+
+  form {
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
@@ -261,9 +269,10 @@ input[type="submit"]:hover {
 
 @media(max-width:450px) {
   .card-imgs {
-    left:20px;
+    left: 20px;
   }
-  form{
+
+  form {
     width: calc(100% - 40px);
     padding-left: 20px;
     padding-right: 20px;
@@ -302,7 +311,7 @@ input[type="submit"]:hover {
   .add-card-section picture img {
     height: initial;
   }
-  
+
 
   .card-infos-2 {
     top: 62px;
