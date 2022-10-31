@@ -7,7 +7,7 @@ const ccLogo = document.querySelector(".card-infos img:first-child")
 const cardHolderName = document.querySelector("#name")
 
 function setCardType(type){
-ccLogo.setAttribute("src", `/images/cc-${type}.svg`);
+ccLogo.setAttribute("src", `cc-${type}.svg`);
 if(type == "visa"){
   ccLogo.style = 'height:38px;'
   
