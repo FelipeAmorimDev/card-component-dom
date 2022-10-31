@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Interactive card details form</title>
 
-  
+
   <style>
     .attribution {
       font-size: 11px;
@@ -34,7 +34,7 @@
         <img src="bg-main-mobile.png" alt="">
       </picture>
 
-      
+
       <div class="card-imgs">
         <div class="card-infos">
           <img src="./images/cc-default.svg" alt="">
@@ -49,30 +49,56 @@
         <div class="card-infos-2">
           <span class="font-1-l color-0">000</span>
         </div>
-        <img src="./images/bg-card-front.png"  class="front-of-card" alt="" aria-hidden="true">
+        <img src="./images/bg-card-front.png" class="front-of-card" alt="" aria-hidden="true">
         <img src="./images/bg-card-back.png" alt="" aria-hidden="true">
       </div>
 
-      <form action="">
-        <label for="" class="font-1-s color-3 mb1">CARDHOLDER NAME</label>
-        <input type="text" name="name" id="name" class="mb2" placeholder="e.g. Jane Appleseed" maxlength="20">
-        <label for=""  class="font-1-s color-3 mb1">CARD NUMBER</label>
-        <input type="text" name="cardnumber" id="cardnumber" class="mb2" placeholder="e.g. 1234 5678 9123 0000">
-        <div class="exp-area mb3">
+      <form action="" id="form-cc">
+        <div class="container-card">
+          <label for="" class="font-1-s color-3 mb1">CARDHOLDER NAME</label>
+          <input type="text" name="name" id="name" class="mb-5" placeholder="e.g. Jane Appleseed" maxlength="20">
+        </div>
+        <div class="error-msg mb1">
+          <span>can't be blank</span>
+        </div>
+        <div class="container-card">
+          <label for="" class="font-1-s color-3 mb1">CARD NUMBER</label>
+
+          <input type="text" name="cardnumber" id="cardnumber" class="mb-5" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="error-msg mb1">
+          <span>can't be blank</span>
+        </div>
+        <div class="exp-area">
           <div>
-            <label for=""  class="font-1-s color-3 mb1">EXP. DATE (MM/YY)</label>
+            <label for="" class="font-1-s color-3 mb1">EXP. DATE (MM/YY)</label>
             <input type="text" name="expdate-M" id="expdate-m" placeholder="MM">
             <input type="text" name="expdate-Y" id="expdate-y" placeholder="YY">
+
           </div>
           <div>
-            <label for=""  class="font-1-s color-3 mb1">CVC</label>
+            <label for="" class="font-1-s color-3 mb1">CVC</label>
             <input type="text" name="cvc-code" id="cvc-code" placeholder="e.g. 123">
+
+          </div>
+          <div class="error-msg mb-5">
+            <span>can't be blank</span>
           </div>
         </div>
-
+      
         <input id="confim-btn" type="submit" value="Confirm" class="font-1-xl color-0">
 
       </form>
+      <div  class="newpage">
+        <figure class="thankyou_img">
+          <img src="images/icon-complete.svg" alt="icon complete">
+      </figure>
+      <section class="thankyou_text">
+          <h2 class="thankyou_text_title">THANK YOU!</h2>
+          <p class="thankyou_text_parag">We've added your card details</p>
+          <input id="confim-btn" type="submit" value="Continue" class="font-1-xl color-0">
+      </section>
+      </div>
       </div>
     </section>
   </main>
@@ -82,9 +108,7 @@
     Coded by <a href="#">FelipeAmorimDev</a>.
   </div>
   <script type="module" src="/main.js"></script>
-  
+
 </body>
 
 </html>
-
-
