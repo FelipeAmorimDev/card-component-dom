@@ -28,7 +28,7 @@
 
 <body>
   <main class="main">
-    <section class="add-card-section">
+    <section class="add-card-section" aria-label="ADD Card Section">
       <picture>
         <source media="(min-width: 880px )" srcset="bg-main-desktop.png">
         <img src="bg-main-mobile.png" alt="">
@@ -62,7 +62,7 @@
           <span>can't be blank</span>
         </div>
         <div class="container-card">
-          <label for="" class="font-1-s color-3 mb1">CARD NUMBER</label>
+          <label for="cardnumber" class="font-1-s color-3 mb1">CARD NUMBER</label>
 
           <input type="text" name="cardnumber" id="cardnumber" class="mb-5" placeholder="e.g. 1234 5678 9123 0000">
         </div>
@@ -71,13 +71,13 @@
         </div>
         <div class="exp-area">
           <div>
-            <label for="" class="font-1-s color-3 mb1">EXP. DATE (MM/YY)</label>
+            <label for="expdate-M" class="font-1-s color-3 mb1">EXP. DATE (MM/YY)</label>
             <input type="text" name="expdate-M" id="expdate-m" placeholder="MM">
             <input type="text" name="expdate-Y" id="expdate-y" placeholder="YY">
 
           </div>
           <div>
-            <label for="" class="font-1-s color-3 mb1">CVC</label>
+            <label for="cvc-code" class="font-1-s color-3 mb1">CVC</label>
             <input type="text" name="cvc-code" id="cvc-code" placeholder="e.g. 123">
 
           </div>
@@ -86,7 +86,7 @@
           </div>
         </div>
       
-        <input id="confim-btn" type="submit" value="Confirm" class="font-1-xl color-0">
+        <input type="submit" value="Confirm" class="font-1-xl color-0">
 
       </form>
       <div  class="newpage">
@@ -96,7 +96,7 @@
       <section>
           <h2>THANK YOU!</h2>
           <p>We've added your card details</p>
-          <input id="confim-btn" type="submit" value="Continue" class="font-1-xl color-0 mb1">
+          <input type="submit" value="Continue" class="font-1-xl color-0 mb1">
       </section>
       </div>
       </div>
