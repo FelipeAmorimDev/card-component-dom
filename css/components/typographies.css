@@ -1,0 +1,44 @@
+.font-1-xxl{
+font-family: 'Space Grotesk', sans-serif;
+font-weight:500;
+letter-spacing:3px;
+font-size: 1.75rem
+}
+
+.font-1-xl{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight:500;
+  font-size: 1.125rem
+}
+
+.font-1-l{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight:500;
+  letter-spacing:2px;
+  font-size: .88rem
+}
+
+.font-1-s{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight:500;
+  letter-spacing:2px;
+  font-size: .75rem
+}
+
+@media (max-width:1400px){
+  .font-1-xxl{
+    font-size: 1.3rem;
+  }
+  .font-1-l{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:375px){
+  .font-1-xxl{
+    font-size: 1rem;
+  }
+  .font-1-l{
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="main">
+    <section class="add-card-section">
+      <picture>
+        <source media="(min-width: 880px )" srcset="./images/bg-main-desktop.png">
+        <img src=" ./images/bg-main-mobile.png" alt="">
+      </picture>
+
+      
+      <div class="card-imgs">
+        <div class="card-infos">
+          <img src="./images/cc-default.svg" alt="">
+          <div class="card-content">
+            <span class="font-1-xxl color-0">0000 0000 0000 0000</span>
+            <div>
+              <span class="font-1-l color-0">Jane Appleseed</span>
+              <span class="font-1-l color-0"><span class="mes-span">00</span>/<span class="ano-span">00</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-infos-2">
+          <span class="font-1-l color-0">000</span>
+        </div>
+        <img src="./images/bg-card-front.png"  class="front-of-card" alt="" aria-hidden="true">
+        <img src="./images/bg-card-back.png" alt="" aria-hidden="true">
+      </div>
+
+      <form action="">
+        <label for="" class="font-1-s color-3 mb1">CARDHOLDER NAME</label>
+        <input type="text" name="name" id="name" class="mb2" placeholder="e.g. Jane Appleseed" maxlength="20">
+        <label for=""  class="font-1-s color-3 mb1">CARD NUMBER</label>
+        <input type="text" name="cardnumber" id="cardnumber" class="mb2" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="exp-area mb3">
+          <div>
+            <label for=""  class="font-1-s color-3 mb1">EXP. DATE (MM/YY)</label>
+            <input type="text" name="expdate-M" id="expdate-m" placeholder="MM">
+            <input type="text" name="expdate-Y" id="expdate-y" placeholder="YY">
+          </div>
+          <div>
+            <label for=""  class="font-1-s color-3 mb1">CVC</label>
+            <input type="text" name="cvc-code" id="cvc-code" placeholder="e.g. 123">
+          </div>
+        </div>
+
+        <input id="confim-btn" type="submit" value="Confirm" class="font-1-xl color-0">
+
+      </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">FelipeAmorimDev</a>.
+  </div>
+  <script type="module" src="/main.js"></script>
+  
+</body>
+
+</html>
+
+
